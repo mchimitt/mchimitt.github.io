@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600'); 
 body {
 	margin: 0;
 	background: #222;
@@ -90,7 +90,7 @@ p{
     margin-right: 25%;  
     font-size: 20px;
     font-weight: normal;
-    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
 }
 
 li{
