@@ -1,116 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href = "https://fonts.googleapis.com/css?family-Work+San:300" >
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <link rel="stylesheet" href="/css/all.min.css">
-    <title>Projects</title>
-</head>
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600'); 
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    padding-bottom: 250px;
+}
 
-<body>
-    
-    <header>
-        <div class="container">
-          <img src="sources/rsz_matthew_chimitt-logos_black.png" class="logo"></img>
-    
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
-    <h1>Projects</h1>
-    <p class="separator">_______________________________________________________________________________</p>
-    <p>You can find all of my projects on my Github:</p>
-    <p><a href="https://github.com/mchimitt"><i class="fab fa-github"></i> github.com/mchimitt</a> </p>
-    <p class="separator">_______________________________________________________________________________</p>
 
-    <div class="projects">
+.container {
+	width: 80%;
+	margin: 0 auto;
+  /* FOR A SEMI WORKING STICKY NAVIGATION BAR, PUT position: fixed HERE */
+  /* KINDA BREAKS THE NAV BAR THOUGH SO TREAD WITH CAUTION */
+}
 
-    <div class="projCookbook">
-        <div class="projText">
-            <h1>Cookbook App</h1>
-            <p>Created in Android Studio, using Java, XML, and SQLite. This app allows the user to input all of their cooking recipes digitally. Each recipe is stored, retrieved and updated from a database, making it easy for the user to take their recipes on the go.</p>
-            <p>Find the project by clicking here.</p>
-        </div>
-        <div class=projImages>
-            <img class="cookbookImg1" src="sources/imgCookbook1.jpg" alt="Cookbook App">
-            <img class="cookbookImg2" src="sources/imgCookbook2.jpg" alt="Cookbook App">
-        </div>
-    </div>
-    <p class="separator">_______________________________________________________________________________</p>
-    
-    <div class="projJava2DGame">
-        <div class="projText">
-            <h1>Java 2D Game</h1>
-            <p>Created using Java. This is a simple 2D platforming game that I created at the start of quarantine. It has several levels which use a paint file that converts to the level map.</p>
-            <p>Find the project by clicking here.</p>
-        </div>
-        <div class=projImages>
-            <img src="" alt="Java 2D Game">
-            <!--TODO: GET PICTURES-->
-        </div>
-    </div>
-    <p class="separator">_______________________________________________________________________________</p>
-    
-    <div class="projCocoLoco">
-        <div class="projText">
-            <h1>CocoLoco</h1>
-            <p>Created for the 2020 CovidHacks Hackathon. I within a team of three created an app in Android Studio, using Java and XML, that gives useful information regarding the Covid-19 pandemic. Features include a symptom test for users, a GPS mechanism to locate a testing center near the user, as well as other resources designed to assist the user through the pandemic.</p>
-            <p><a href="https://github.com/mchimitt/CoCo-Loco">Find the project by clicking here.</a></p>
-        </div>
-        <div class="projImages">
-            <img src="sources/cocolocoimg1.jpg" alt="CocoLoco">
-            <img src="sources/cocolocoimg2.jpg" alt="CocoLoco">
-        </div>
-    </div>
-    <p class="separator">_______________________________________________________________________________</p>
+header {
+  background: #FCF4A3;
+}
 
-    <div class="projTipCalculator">
-        <div class="projText">
-            <h1>Tip Calculator</h1>
-            <p>Created in Android Studio, using Java and XML. This is a simple app that allows the user to easily calculate their tip while at a restuarant.</p>
-            <p>Find the project by clicking here.</p>
-        </div>
-        <div class="projImages">
-            <img src="sources/Tip Calculator 1.jpg" alt="Tip Calculator">
-            <img src="sources/Tip Calculator 2.jpg" alt="Tip Calculator">
-        </div>
-    </div>
-    <p class="separator">_______________________________________________________________________________</p>
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
-    <div class="photonNetworkingGame">
-        <div class="projText">
-            <h1>Photon Networked Game</h1>
-            <p>Created in Unity using C# and the Photon Networking package. This is a game that allows a user to connect to a server with other users, in a first person shooter styled game. The user can either create or join a server and play with their friends seemlessly.</p>
-            <p>Find the project by clicking here.</p>
-        </div>
-        <div class="projImages">
+.logo {
+  float: left;
+  padding: 10px 0;
+}
 
-        </div>
-    </div>
-    <p class="separator">_______________________________________________________________________________</p>
+nav {
+  float: right;
+}
 
-    <div class="complexNumbers">
-        <div class="projText">
-            <h1>Complex Numbers</h1>
-            <p>Created versions in both C++ and Java. Both versions involve creating a class that stores information about a complex number. This class has operations for basic math with complex numbers, using operator overloading in C++, and basic methods in Java.</p>
-            <p><a href="https://github.com/mchimitt/Complex-Numbers-C-Plus-Plus">Find the C++ project by clicking here.</a></p>
-            <p>Find the Java project by clicking here.</p> 
-            <p>(C++ version on the left, Java version on the right.)</p>
-        </div>
-        <div class="projImages">
-            <img src="sources/Complex Number C++.PNG" alt="C++ Complex Number">
-        </div>
-    </div>
-    <p class="separator">_______________________________________________________________________________</p>
+nav ul, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-    </div>
-</body>
-</html>
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 18px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+h1{
+    color:white;
+    font-size: 70px;
+    padding-left: 10%;
+    margin-bottom: -10px;
+    font-weight: normal;
+}
+
+p{
+    color: white;
+    padding-left: 10%;
+    margin-right: 25%;  
+    font-size: 20px;
+    font-weight: normal;
+    overflow: -moz-hidden-unscrollable;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 18px;
+  
+    position: relative;
+}
+
+i{
+    font-size: 30px;
+    color: white;
+
+}
+
+.separator{
+  color: white;
+  padding-left: 10%;
+  margin-right: 25%;  
+  font-size: 20px;
+  font-weight: normal;
+  overflow: -moz-hidden-unscrollable;
+}
+
+#portfolioIcons{
+    margin-left: 10%;
+}
+
+.profile_pic{
+    float: right;
+    width:20%;
+    height:20%;
+    padding-left: 50px;
+    margin-right: 15%;
+}
+
+.info{
+    overflow: auto;
+}
+
+a:hover { text-decoration: none; }    
+a:active { text-decoration: none; }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+div.projects h1{
+    color:white;
+    font-size: 50px;
+}
+
+div.projects img {
+    width:30%;
+    height:30%;
+    margin-right: 50px;
+}
+
+div.projects p{
+    overflow: auto;
+    margin-right: 25%;  
+}
+
+div.projImages {
+    margin-left: 10%;
+    margin-right: 25%;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FCF4A3;
+    border-radius: 6px;
+}
+
+
+
