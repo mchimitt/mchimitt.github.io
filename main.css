@@ -19,6 +19,10 @@ header {
   background: #FCF4A3;
 }
 
+p{
+  margin-right: 30%;
+}
+
 header::after {
   content: '';
   display: table;
