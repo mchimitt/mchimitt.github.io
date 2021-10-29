@@ -107,15 +107,6 @@ i{
 
 }
 
-.separator{
-  color: white;
-  padding-left: 10%;
-  margin-right: 25%;  
-  font-size: 20px;
-  font-weight: normal;
-  overflow: -moz-hidden-unscrollable;
-}
-
 #portfolioIcons{
     margin-left: 10%;
 }
