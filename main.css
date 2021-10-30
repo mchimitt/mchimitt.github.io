@@ -9,7 +9,7 @@ body {
 
 
 .container {
-	width: 80%;
+	width: 95%;
 	margin: 0 auto;
   /* FOR A SEMI WORKING STICKY NAVIGATION BAR, PUT position: fixed HERE */
   /* KINDA BREAKS THE NAV BAR THOUGH SO TREAD WITH CAUTION */
@@ -32,6 +32,7 @@ header::after {
 
 nav {
   float: right;
+  
 }
 
 nav ul, ul {
@@ -44,6 +45,7 @@ nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 18px;
+  padding-bottom: 18px;
 
   position: relative;
 }
