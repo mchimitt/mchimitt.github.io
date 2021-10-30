@@ -90,7 +90,7 @@ p{
     margin-right: 25%;  
     font-size: 20px;
     font-weight: normal;
-    overflow: -moz-hidden-unscrollable;
+    overflow: hidden;
 }
 
 li{
@@ -142,7 +142,7 @@ div.projects img {
 }
 
 div.projects p{
-    overflow: auto;
+    overflow: clip;
     margin-right: 25%;  
 }
 
@@ -160,5 +160,16 @@ div.projImages {
     border-radius: 6px;
 }
 
+/*
+div.separator {
+    color: white;
+    padding-left: 10%;
+    
+    margin-right: 25%;  
+    font-size: 20px;
+    font-weight: normal;
+    overflow: hidden;
+}
+*/
 
 
