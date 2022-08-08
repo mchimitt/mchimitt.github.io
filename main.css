@@ -150,7 +150,17 @@ div.projects p{
 
 div.projImages {
     margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.mobileImages {
+    margin-left: 10%;
     margin-right: 25%;
+}
+
+div.gameImages {
+    margin-left: 10%;
+    margin-right: auto;
 }
 
 ::-webkit-scrollbar{
@@ -173,5 +183,3 @@ div.separator {
     overflow: hidden;
 }
 */
-
-
